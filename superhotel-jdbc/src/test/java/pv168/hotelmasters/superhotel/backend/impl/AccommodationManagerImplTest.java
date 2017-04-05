@@ -70,31 +70,35 @@ public class AccommodationManagerImplTest {
 
     private void prepareTestData() throws SQLException {
         john = new GuestFactory()
-                .name("john")
+                .name("John Locke")
                 .address("Manesova 120, Brno")
                 .birthday(LocalDate.of(1996,NOVEMBER,23))
                 .crCardNm(1234L).build();
         jane = new GuestFactory()
-                .name("jane")
+                .name("Jane Eyre")
                 .address("Filkukova 42, Brno")
                 .birthday(LocalDate.of(2008,FEBRUARY,29))
                 .crCardNm(12345L)
                 .build();
-        jack = new GuestFactory().name("jack")
+        jack = new GuestFactory()
+                .name("Jack Sparrow")
                 .address("Hrncirska 23, Brno")
                 .birthday(LocalDate.of(1997,AUGUST,10))
                 .crCardNm(1234567L)
                 .build();
-        phoebe = new GuestFactory().name("phoebe")
+        phoebe = new GuestFactory()
+                .name("Phoebe Buffay")
                 .address("5th Avenue 21, New York")
                 .birthday(LocalDate.of(1974,DECEMBER,5))
                 .crCardNm(12345678L)
                 .build();
-        jefrey = new GuestFactory().name("jefrey")
+        jefrey = new GuestFactory()
+                .name("Jefrey Star")
                 .address("Green Street 12, Springfield")
                 .birthday(LocalDate.of(1987,MAY,30))
                 .crCardNm(123456789L)
                 .build();
+
         economy = new RoomFactory().price(200.00).capacity(3).build();
         luxury = new RoomFactory().price(400.00).capacity(2).build();
         penthouse = new RoomFactory().price(2200.00).capacity(4).build();
